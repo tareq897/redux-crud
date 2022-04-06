@@ -22,7 +22,8 @@ export const taskSlice = createSlice({
             state.value.map((task) => {
                 if(task.id === action.payload.id) {
                     task.name = action.payload.name;
-                    task.time = action.payload.time;
+                    task.phone = action.payload.phone;
+                    task.hobbies = action.payload.hobbies;
                 }
             })
         }
